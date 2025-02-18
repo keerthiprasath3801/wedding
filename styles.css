@@ -1,0 +1,246 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+body {
+    background-color: rgb(2, 2, 30);
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start;
+    align-items: center; 
+    min-height: 100vh;
+    padding-top: 10px;
+    gap: 20px;
+    color: azure;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    gap: 2px;
+    animation: fadeText 2s infinite alternate ease-in-out;
+    
+}
+
+
+.title h2 {
+    font-size: clamp(1.3rem,7vw,5rem);
+    font-weight: 900;
+    color: azure;
+    position: relative;
+    display: inline-block;
+    margin: 0;
+    padding: 2px;
+    text-shadow: 1px 1px azure;
+   
+}
+
+.title p{
+    color: azure;
+    text-align: right;
+    font-size: clamp(0.9rem,5vw,3rem);
+    margin: 0;
+    padding: 0;
+    padding: 2px;
+    text-shadow: 1px 1px azure;
+    
+}
+.title p span{
+    color: gold;
+    text-shadow: 1px 1px gold;
+    animation: fadeSpan 2s infinite alternate ease-in-out;
+}
+.bride_img img{
+    height: 10px;
+    width: 10px;
+}
+
+@keyframes fadeText {
+    0% {
+        opacity: 0.5;
+        transform: translateX(2px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.title h2 span {
+    color: gold;
+    text-shadow: 1px 1px gold;
+    animation: fadeSpan 2s infinite alternate ease-in-out;
+}
+
+@keyframes fadeSpan {
+    0% {
+        opacity: 0.6;
+        transform: scale(0.98);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+@keyframes borderGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        border-color: gold;
+        transform: rotate(0deg);
+    }
+    50% {
+        box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+        border-color: rgb(255, 223, 0);
+        transform: rotate(1deg);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+        border-color: gold;
+        transform: rotate(0deg);
+    }
+}
+@keyframes neonGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 165, 0, 0.6);
+        border-color: gold;
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 1), 0 0 30px rgba(255, 165, 0, 0.8);
+        border-color: rgb(197, 218, 40);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 165, 0, 0.6);
+        border-color: rgb(190, 169, 47);
+    }
+}
+#bride_img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    margin: 20px;
+}
+#bride_img img {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 10px solid rgb(211, 187, 45);
+    animation: neonGlow 1.5s infinite alternate ease-in-out;
+}
+.bridename {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Adds spacing between elements */
+}
+.bridename p.left {
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    color: gold;
+    text-align: center;
+    font-family: "Dancing Script", serif;
+    letter-spacing: 1px; 
+}
+@keyframes borderGlow {
+    0% {
+        border-color: gold;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    50% {
+        border-color: orange;
+        box-shadow: 0 0 20px rgba(255, 165, 0, 0.8);
+    }
+    100% {
+        border-color: gold;
+        box-shadow: 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+}
+
+#address {
+    text-align: center; 
+    padding: 1em;
+    background-color: rgb(2, 2, 30); 
+    color: gold; 
+    border-radius: 15px;
+    border: 2px solid gold; 
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.5); 
+    font-family: "Dancing Script", serif; 
+    animation: borderGlow 2s infinite alternate;
+}
+
+#address h3 {
+    font-size: clamp(1rem, 6vw, 2.5rem); 
+    font-weight: bold;
+    letter-spacing: 1px; 
+    margin-bottom: 0.5em; 
+}
+
+#address p {
+    font-size: clamp(1rem, 4vw, 1.5rem); 
+    letter-spacing: 1px;
+    color: lightgoldenrodyellow; 
+}
+
+
+
+.countdown-container {
+    background: rgb(2, 2, 30);
+    padding: min(2.5em, 10%);
+    margin: 30px;
+    border-radius: 15px;
+    border: 3px solid gold;
+    color: azure;
+    animation: borderGlow 2s infinite alternate ease-in-out;
+}
+
+ 
+  
+  .countdown {
+    display: flex;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+    padding: 0.6rem;
+    height: 40%;
+  }
+  
+  .time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size:clamp(1rem,3vw,2rem);
+    
+  }
+  
+  .time span:first-child {
+    font-size:(0.5rem,3vw,2rem);;
+    font-weight: bold;
+    text-shadow: 1px 1px gold;
+    animation: bounce 2s infinite;
+  }
+  
+
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+
+ 
