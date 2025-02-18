@@ -16,17 +16,19 @@ body {
     width: 100%;
     text-align: center;
     gap: 2px;
+    flex-wrap:nowrap;
     animation: fadeText 2s infinite alternate ease-in-out;
     
 }
 
 
 .title h2 {
-    font-size: clamp(1rem,7vw,5rem);
+    font-size: clamp(0.7rem,7vw,5rem);
     font-weight: 900;
     color: azure;
     position: relative;
     display: inline;
+    text-align: left;
     margin: 0;
     padding: 2px;
     text-shadow: 1px 1px azure;
