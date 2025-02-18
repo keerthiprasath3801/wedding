@@ -26,7 +26,7 @@ body {
     font-weight: 900;
     color: azure;
     position: relative;
-    display: inline-block;
+    display: inline;
     margin: 0;
     padding: 2px;
     text-shadow: 1px 1px azure;
