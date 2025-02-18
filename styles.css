@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
 body {
-    background-color: rgb(2, 2, 30);
+    background-color: black;
     display: flex;
     flex-direction: column; 
     justify-content: flex-start;
@@ -163,7 +163,7 @@ body {
 #address {
     text-align: center; 
     padding: 1em;
-    background-color: rgb(2, 2, 30); 
+    background-color: black; 
     color: gold; 
     border-radius: 15px;
     border: 2px solid gold; 
@@ -188,7 +188,7 @@ body {
 
 
 .countdown-container {
-    background: rgb(2, 2, 30);
+    background: black;
     padding: min(2.5em, 10%);
     margin: 30px;
     border-radius: 15px;
