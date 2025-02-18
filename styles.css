@@ -25,6 +25,7 @@ body {
 .title h2 {
     font-size: clamp(0.7rem,7vw,5rem);
     font-weight: 900;
+    width: 100%;
     color: azure;
     position: relative;
     display: inline;
